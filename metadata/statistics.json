@@ -1,0 +1,520 @@
+{
+  "schema_version": "1.1",
+  "dataset": "LogicBench-1K",
+  "version": "1.0.1",
+  "release": "camera-ready",
+  "generated_at": "2026-06-08T20:31:28Z",
+  "generated_by": "scripts/generate_statistics.py",
+  "num_samples": 1000,
+  "num_images": 1000,
+  "image_format": "JPEG",
+  "image_resolution": [
+    512,
+    512
+  ],
+  "splits": {
+    "train": 700,
+    "val": 100,
+    "test": 200
+  },
+  "gate_vocabulary": [
+    "AND",
+    "NAND",
+    "NOR",
+    "NOT",
+    "OR",
+    "XNOR",
+    "XOR"
+  ],
+  "definitions": {
+    "gate_mixture": "Sorted multiset of gate types present in one diagram; unique mixtures measure combinatorial diversity.",
+    "directed_density": "edges / (nodes * (nodes - 1)) for n > 1; proportion of possible directed pairs that are annotated edges.",
+    "terminal_degree": "Per-gate in-degree (incoming edges) and out-degree (outgoing edges) aggregated across all diagrams."
+  },
+  "sample_diversity": {
+    "unique_gate_mixtures": 343,
+    "mixture_coverage": 0.343,
+    "graphs_with_no_edges": 19,
+    "isolated_gate_instances": 232,
+    "graph_size": {
+      "nodes_per_graph": {
+        "min": 1,
+        "max": 31,
+        "mean": 6.174,
+        "median": 5.0,
+        "std": 3.699,
+        "q1": 4.0,
+        "q3": 7.0
+      },
+      "edges_per_graph": {
+        "min": 0,
+        "max": 57,
+        "mean": 6.423,
+        "median": 5.0,
+        "std": 5.636,
+        "q1": 3.0,
+        "q3": 8.0
+      },
+      "node_count_histogram": {
+        "1-5": 576,
+        "6-10": 343,
+        "11-15": 49,
+        "16-20": 18,
+        "21-31": 14
+      },
+      "edge_count_histogram": {
+        "0": 19,
+        "1-5": 544,
+        "6-10": 298,
+        "11-20": 114,
+        "21-57": 25
+      }
+    }
+  },
+  "topology_distribution": {
+    "global": {
+      "num_samples": 1000,
+      "totals": {
+        "gates": 6174,
+        "edges": 6423,
+        "avg_gates_per_sample": 6.174,
+        "avg_edges_per_sample": 6.423
+      },
+      "sample_diversity": {
+        "unique_gate_mixtures": 343,
+        "mixture_coverage": 0.343,
+        "graphs_with_no_edges": 19,
+        "isolated_gate_instances": 232
+      },
+      "graph_size": {
+        "nodes_per_graph": {
+          "min": 1,
+          "max": 31,
+          "mean": 6.174,
+          "median": 5.0,
+          "std": 3.699,
+          "q1": 4.0,
+          "q3": 7.0
+        },
+        "edges_per_graph": {
+          "min": 0,
+          "max": 57,
+          "mean": 6.423,
+          "median": 5.0,
+          "std": 5.636,
+          "q1": 3.0,
+          "q3": 8.0
+        },
+        "node_count_histogram": {
+          "1-5": 576,
+          "6-10": 343,
+          "11-15": 49,
+          "16-20": 18,
+          "21-31": 14
+        },
+        "edge_count_histogram": {
+          "0": 19,
+          "1-5": 544,
+          "6-10": 298,
+          "11-20": 114,
+          "21-57": 25
+        }
+      },
+      "topology": {
+        "avg_directed_density": 0.2355,
+        "gate_type_frequencies": {
+          "AND": {
+            "count": 1492,
+            "proportion": 0.2417
+          },
+          "NAND": {
+            "count": 915,
+            "proportion": 0.1482
+          },
+          "NOR": {
+            "count": 597,
+            "proportion": 0.0967
+          },
+          "NOT": {
+            "count": 1389,
+            "proportion": 0.225
+          },
+          "OR": {
+            "count": 894,
+            "proportion": 0.1448
+          },
+          "XNOR": {
+            "count": 258,
+            "proportion": 0.0418
+          },
+          "XOR": {
+            "count": 629,
+            "proportion": 0.1019
+          }
+        },
+        "terminal_degree_histogram": {
+          "in_degree": {
+            "0": 2112,
+            "1": 2129,
+            "2": 1634,
+            "3": 207,
+            "4": 70,
+            "5": 14,
+            "6": 5,
+            "7": 1,
+            "8": 1,
+            "10": 1
+          },
+          "out_degree": {
+            "0": 1600,
+            "1": 3185,
+            "2": 1125,
+            "3": 152,
+            "4": 79,
+            "5": 15,
+            "6": 6,
+            "8": 7,
+            "9": 4,
+            "13": 1
+          }
+        }
+      }
+    },
+    "by_split": {
+      "train": {
+        "num_samples": 700,
+        "totals": {
+          "gates": 4137,
+          "edges": 4256,
+          "avg_gates_per_sample": 5.91,
+          "avg_edges_per_sample": 6.08
+        },
+        "sample_diversity": {
+          "unique_gate_mixtures": 261,
+          "mixture_coverage": 0.3729,
+          "graphs_with_no_edges": 14,
+          "isolated_gate_instances": 167
+        },
+        "graph_size": {
+          "nodes_per_graph": {
+            "min": 1,
+            "max": 31,
+            "mean": 5.91,
+            "median": 5.0,
+            "std": 3.48,
+            "q1": 4.0,
+            "q3": 7.0
+          },
+          "edges_per_graph": {
+            "min": 0,
+            "max": 57,
+            "mean": 6.08,
+            "median": 5.0,
+            "std": 5.434,
+            "q1": 3.0,
+            "q3": 7.0
+          },
+          "node_count_histogram": {
+            "1-5": 435,
+            "6-10": 217,
+            "11-15": 28,
+            "16-20": 12,
+            "21-31": 8
+          },
+          "edge_count_histogram": {
+            "0": 14,
+            "1-5": 400,
+            "6-10": 199,
+            "11-20": 73,
+            "21-57": 14
+          }
+        },
+        "topology": {
+          "avg_directed_density": 0.2399,
+          "gate_type_frequencies": {
+            "AND": {
+              "count": 985,
+              "proportion": 0.2381
+            },
+            "NAND": {
+              "count": 668,
+              "proportion": 0.1615
+            },
+            "NOR": {
+              "count": 390,
+              "proportion": 0.0943
+            },
+            "NOT": {
+              "count": 879,
+              "proportion": 0.2125
+            },
+            "OR": {
+              "count": 606,
+              "proportion": 0.1465
+            },
+            "XNOR": {
+              "count": 177,
+              "proportion": 0.0428
+            },
+            "XOR": {
+              "count": 432,
+              "proportion": 0.1044
+            }
+          },
+          "terminal_degree_histogram": {
+            "in_degree": {
+              "0": 1448,
+              "1": 1398,
+              "2": 1088,
+              "3": 146,
+              "4": 44,
+              "5": 10,
+              "6": 3
+            },
+            "out_degree": {
+              "0": 1105,
+              "1": 2125,
+              "2": 733,
+              "3": 101,
+              "4": 49,
+              "5": 11,
+              "6": 1,
+              "8": 7,
+              "9": 4,
+              "13": 1
+            }
+          }
+        }
+      },
+      "val": {
+        "num_samples": 100,
+        "totals": {
+          "gates": 677,
+          "edges": 704,
+          "avg_gates_per_sample": 6.77,
+          "avg_edges_per_sample": 7.04
+        },
+        "sample_diversity": {
+          "unique_gate_mixtures": 73,
+          "mixture_coverage": 0.73,
+          "graphs_with_no_edges": 3,
+          "isolated_gate_instances": 23
+        },
+        "graph_size": {
+          "nodes_per_graph": {
+            "min": 2,
+            "max": 29,
+            "mean": 6.77,
+            "median": 6.0,
+            "std": 3.911,
+            "q1": 4.0,
+            "q3": 9.0
+          },
+          "edges_per_graph": {
+            "min": 0,
+            "max": 47,
+            "mean": 7.04,
+            "median": 6.0,
+            "std": 6.071,
+            "q1": 3.0,
+            "q3": 9.5
+          },
+          "node_count_histogram": {
+            "1-5": 43,
+            "6-10": 44,
+            "11-15": 11,
+            "16-20": 0,
+            "21-31": 2
+          },
+          "edge_count_histogram": {
+            "0": 3,
+            "1-5": 46,
+            "6-10": 36,
+            "11-20": 13,
+            "21-57": 2
+          }
+        },
+        "topology": {
+          "avg_directed_density": 0.2148,
+          "gate_type_frequencies": {
+            "AND": {
+              "count": 179,
+              "proportion": 0.2644
+            },
+            "NAND": {
+              "count": 62,
+              "proportion": 0.0916
+            },
+            "NOR": {
+              "count": 69,
+              "proportion": 0.1019
+            },
+            "NOT": {
+              "count": 182,
+              "proportion": 0.2688
+            },
+            "OR": {
+              "count": 96,
+              "proportion": 0.1418
+            },
+            "XNOR": {
+              "count": 13,
+              "proportion": 0.0192
+            },
+            "XOR": {
+              "count": 76,
+              "proportion": 0.1123
+            }
+          },
+          "terminal_degree_histogram": {
+            "in_degree": {
+              "0": 220,
+              "1": 249,
+              "2": 182,
+              "3": 14,
+              "4": 11,
+              "5": 1
+            },
+            "out_degree": {
+              "0": 169,
+              "1": 347,
+              "2": 135,
+              "3": 17,
+              "4": 9
+            }
+          }
+        }
+      },
+      "test": {
+        "num_samples": 200,
+        "totals": {
+          "gates": 1360,
+          "edges": 1463,
+          "avg_gates_per_sample": 6.8,
+          "avg_edges_per_sample": 7.315
+        },
+        "sample_diversity": {
+          "unique_gate_mixtures": 128,
+          "mixture_coverage": 0.64,
+          "graphs_with_no_edges": 2,
+          "isolated_gate_instances": 42
+        },
+        "graph_size": {
+          "nodes_per_graph": {
+            "min": 2,
+            "max": 29,
+            "mean": 6.8,
+            "median": 6.0,
+            "std": 4.19,
+            "q1": 4.0,
+            "q3": 8.0
+          },
+          "edges_per_graph": {
+            "min": 0,
+            "max": 48,
+            "mean": 7.315,
+            "median": 5.5,
+            "std": 5.973,
+            "q1": 4.0,
+            "q3": 9.0
+          },
+          "node_count_histogram": {
+            "1-5": 98,
+            "6-10": 82,
+            "11-15": 10,
+            "16-20": 6,
+            "21-31": 4
+          },
+          "edge_count_histogram": {
+            "0": 2,
+            "1-5": 98,
+            "6-10": 63,
+            "11-20": 28,
+            "21-57": 9
+          }
+        },
+        "topology": {
+          "avg_directed_density": 0.2305,
+          "gate_type_frequencies": {
+            "AND": {
+              "count": 328,
+              "proportion": 0.2412
+            },
+            "NAND": {
+              "count": 185,
+              "proportion": 0.136
+            },
+            "NOR": {
+              "count": 138,
+              "proportion": 0.1015
+            },
+            "NOT": {
+              "count": 328,
+              "proportion": 0.2412
+            },
+            "OR": {
+              "count": 192,
+              "proportion": 0.1412
+            },
+            "XNOR": {
+              "count": 68,
+              "proportion": 0.05
+            },
+            "XOR": {
+              "count": 121,
+              "proportion": 0.089
+            }
+          },
+          "terminal_degree_histogram": {
+            "in_degree": {
+              "0": 444,
+              "1": 482,
+              "2": 364,
+              "3": 47,
+              "4": 15,
+              "5": 3,
+              "6": 2,
+              "7": 1,
+              "8": 1,
+              "10": 1
+            },
+            "out_degree": {
+              "0": 326,
+              "1": 713,
+              "2": 257,
+              "3": 34,
+              "4": 21,
+              "5": 4,
+              "6": 5
+            }
+          }
+        }
+      }
+    }
+  },
+  "paper_summary": {
+    "unique_gate_mixtures": 343,
+    "gates_per_diagram": {
+      "range": [
+        1,
+        31
+      ],
+      "mean": 6.174,
+      "median": 5.0,
+      "std": 3.699
+    },
+    "edges_per_diagram": {
+      "range": [
+        0,
+        57
+      ],
+      "mean": 6.423,
+      "median": 5.0,
+      "std": 5.636
+    },
+    "total_gates": 6174,
+    "total_edges": 6423,
+    "mean_directed_density": 0.2355,
+    "data_availability_paragraph": "The corpus comprises 1,000 annotated diagrams with 6,174 gates and 6,423 directed edges. Sample diversity spans 343 unique gate mixtures (34.3% coverage). Diagrams contain 1-31 gates (mean 6.174, median 5.0) and 0-57 edges (mean 6.423, median 5.0). Gate-type and topology statistics are stratified by the official 700/100/200 train/validation/test split in `metadata/statistics.json`."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "gate_0",
+      "type": "AND"
+    },
+    {
+      "id": "gate_3",
+      "type": "NOT"
+    },
+    {
+      "id": "gate_4",
+      "type": "NOT"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gate_3",
+      "target": "gate_4"
+    }
+  ],
+  "image_path": "images/lb1k_00924.jpg"
+}

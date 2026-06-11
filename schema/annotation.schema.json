@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tkcl-research/LogicBench1k/schema/annotation.schema.json",
+  "title": "LogicBench-1K Annotation",
+  "description": "Ground-truth directed graph for a single digital logic circuit diagram.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["nodes", "edges", "image_path"],
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "type"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^gate_[0-9]+$"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["AND", "OR", "NOT", "NAND", "NOR", "XOR", "XNOR"]
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source", "target"],
+        "properties": {
+          "source": {
+            "type": "string",
+            "pattern": "^gate_[0-9]+$"
+          },
+          "target": {
+            "type": "string",
+            "pattern": "^gate_[0-9]+$"
+          }
+        }
+      }
+    },
+    "image_path": {
+      "type": "string",
+      "pattern": "^images/lb1k_[0-9]{5}\\.jpg$"
+    }
+  }
+}

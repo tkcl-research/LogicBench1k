@@ -1,0 +1,62 @@
+{
+  "name": "LogicBench-1K",
+  "description": "Digital logic circuit diagrams with topology-level ground-truth graph annotations.",
+  "version": "1.0.1",
+  "release": "camera-ready",
+  "license": "CC-BY-4.0",
+  "homepage": "https://github.com/tkcl-research/LogicBench1k",
+  "citation_key": "arean2026logicbench",
+  "author": {
+    "name": "Abdullah Ibne Hanif Arean",
+    "affiliation": "The Kow Company Limited"
+  },
+  "contents": [
+    "images",
+    "json_ground_truth",
+    "schema",
+    "official_split_700_100_200",
+    "dataset_statistics"
+  ],
+  "statistics": {
+    "schema_version": "1.1",
+    "json": "metadata/statistics.json",
+    "report": "metadata/STATISTICS.md",
+    "generator": "scripts/generate_statistics.py"
+  },
+  "schema_file": "schema/annotation.schema.json",
+  "schema_docs": "docs/ANNOTATION_SCHEMA.md",
+  "splits": {
+    "train": {
+      "file": "annotations/splits/train.txt",
+      "count": 700
+    },
+    "val": {
+      "file": "annotations/splits/val.txt",
+      "count": 100
+    },
+    "test": {
+      "file": "annotations/splits/test.txt",
+      "count": 200
+    }
+  },
+  "files": {
+    "images": {
+      "pattern": "images/lb1k_{sample_id:05d}.jpg",
+      "count": 1000,
+      "format": "JPEG",
+      "resolution": [512, 512]
+    },
+    "annotations": {
+      "pattern": "annotations/lb1k_{sample_id:05d}.json",
+      "count": 1000
+    }
+  },
+  "sample_id_range": {
+    "min": 0,
+    "max": 999
+  },
+  "scripts": {
+    "validate": "scripts/validate_dataset.py",
+    "generate_statistics": "scripts/generate_statistics.py"
+  }
+}

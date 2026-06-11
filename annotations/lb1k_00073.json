@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "gate_0",
+      "type": "OR"
+    },
+    {
+      "id": "gate_1",
+      "type": "XOR"
+    },
+    {
+      "id": "gate_2",
+      "type": "XOR"
+    },
+    {
+      "id": "gate_3",
+      "type": "XOR"
+    },
+    {
+      "id": "gate_4",
+      "type": "XOR"
+    },
+    {
+      "id": "gate_7",
+      "type": "AND"
+    },
+    {
+      "id": "gate_8",
+      "type": "AND"
+    },
+    {
+      "id": "gate_11",
+      "type": "AND"
+    },
+    {
+      "id": "gate_12",
+      "type": "AND"
+    },
+    {
+      "id": "gate_13",
+      "type": "OR"
+    },
+    {
+      "id": "gate_16",
+      "type": "OR"
+    },
+    {
+      "id": "gate_17",
+      "type": "AND"
+    },
+    {
+      "id": "gate_18",
+      "type": "AND"
+    },
+    {
+      "id": "gate_21",
+      "type": "AND"
+    },
+    {
+      "id": "gate_22",
+      "type": "OR"
+    },
+    {
+      "id": "gate_23",
+      "type": "AND"
+    },
+    {
+      "id": "gate_24",
+      "type": "NOT"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gate_7",
+      "target": "gate_0"
+    },
+    {
+      "source": "gate_8",
+      "target": "gate_13"
+    },
+    {
+      "source": "gate_0",
+      "target": "gate_24"
+    },
+    {
+      "source": "gate_24",
+      "target": "gate_1"
+    },
+    {
+      "source": "gate_13",
+      "target": "gate_1"
+    },
+    {
+      "source": "gate_11",
+      "target": "gate_16"
+    },
+    {
+      "source": "gate_12",
+      "target": "gate_22"
+    },
+    {
+      "source": "gate_16",
+      "target": "gate_17"
+    },
+    {
+      "source": "gate_17",
+      "target": "gate_2"
+    },
+    {
+      "source": "gate_22",
+      "target": "gate_2"
+    },
+    {
+      "source": "gate_23",
+      "target": "gate_4"
+    }
+  ],
+  "image_path": "images/lb1k_00073.jpg"
+}

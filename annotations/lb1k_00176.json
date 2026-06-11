@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "gate_0",
+      "type": "XNOR"
+    },
+    {
+      "id": "gate_3",
+      "type": "NOT"
+    }
+  ],
+  "edges": [],
+  "image_path": "images/lb1k_00176.jpg"
+}
