@@ -9,7 +9,8 @@
 **LogicBench-1K** is a benchmark corpus of **1,000 digital logic circuit diagrams** with **topology-level ground-truth graph annotations**, introduced in:
 
 > **Stroke-Level Connectivity Verification: Grounding Vision-Language Models Against Topology Hallucination in Diagram Understanding**  
-> Abdullah Ibne Hanif Arean, Niamul Hassan Samin, Md Arifur Rahman, Renu Akter Suity, Juena Ahmed Noshin, Md Ashikur Rahman (*ICDAR 2026*)
+> Abdullah Ibne Hanif Arean, Niamul Hassan Samin, Md Arifur Rahman, Renu Akter Suity, Juena Ahmed Noshin, and Md Ashikur Rahman  
+> *International Conference on Document Analysis and Recognition (ICDAR), 2026*
 
 The dataset supports systematic evaluation of **symbol detection**, **graph recovery (connectivity)**, and related document-AI tasks where **pixel-grounded topological fidelity** matters.
 
@@ -64,7 +65,6 @@ LogicBench-1K/
 ├── docs/
 ├── README.md
 ├── LICENSE
-├── CITATION.cff
 └── VERSION
 ```
 
@@ -189,6 +189,10 @@ Per the reference paper:
 
 If you use LogicBench-1K, please cite:
 
+> **Stroke-Level Connectivity Verification: Grounding Vision-Language Models Against Topology Hallucination in Diagram Understanding**  
+> Abdullah Ibne Hanif Arean, Niamul Hassan Samin, Md Arifur Rahman, Renu Akter Suity, Juena Ahmed Noshin, and Md Ashikur Rahman  
+> *International Conference on Document Analysis and Recognition (ICDAR), 2026*
+
 ```bibtex
 @inproceedings{arean2026slcv,
   author    = {Arean, Abdullah Ibne Hanif and Samin, Niamul Hassan and Rahman, Md Arifur and Suity, Renu Akter and Noshin, Juena Ahmed and Rahman, Md Ashikur},
@@ -198,29 +202,13 @@ If you use LogicBench-1K, please cite:
 }
 ```
 
-Dataset record:
-
-```bibtex
-@dataset{arean2026logicbench,
-  author       = {Arean, Abdullah Ibne Hanif},
-  title        = {LogicBench-1K: Digital Logic Circuit Diagrams with Topology-Level Ground Truth},
-  year         = {2026},
-  publisher    = {The Kow Company Limited},
-  howpublished = {\url{https://github.com/tkcl-research/LogicBench1k}},
-  note         = {Benchmark introduced in Stroke-Level Connectivity Verification (SLCV)}
-}
-```
-
-Machine-readable citation: [`CITATION.cff`](CITATION.cff).
-
 ## License
 
 The LogicBench-1K dataset is released under the [Creative Commons Attribution 4.0 International License](LICENSE) (CC BY 4.0).
 
-## Author & affiliation
+## Authors
 
-**Abdullah Ibne Hanif Arean**  
-The Kow Company Limited
+Abdullah Ibne Hanif Arean, Niamul Hassan Samin, Md Arifur Rahman, Renu Akter Suity, Juena Ahmed Noshin, and Md Ashikur Rahman
 
 ## Contact
 
