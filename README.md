@@ -195,7 +195,7 @@ If you use LogicBench-1K, please cite:
 
 ```bibtex
 @inproceedings{arean2026slcv,
-  author    = {Arean, Abdullah Ibne Hanif and Samin, Niamul Hassan and Rahman, Md Arifur and Suity, Renu Akter and Noshin, Juena Ahmed and Rahman, Md Ashikur},
+  author    = {{Abdullah Ibne Hanif Arean} and {Niamul Hassan Samin} and {Md Arifur Rahman} and {Renu Akter Suity} and {Juena Ahmed Noshin} and {Md Ashikur Rahman}},
   title     = {Stroke-Level Connectivity Verification: Grounding Vision-Language Models Against Topology Hallucination in Diagram Understanding},
   booktitle = {International Conference on Document Analysis and Recognition (ICDAR)},
   year      = {2026}
